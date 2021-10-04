@@ -1,6 +1,10 @@
 let imgArr = [], count =1, FRAMES_PER_SECOND = 4;
 const maxFrames = 360, width = 4000, height = width;
-const CAPTURE=false, DISPLAY_NUMBER = false, RANDOM_IMAGES = false, RANDOM_SIZE = false, NUMBER_PER_ROW = 10;
+const CAPTURE=false, // Captures an image per a new set of frames
+DISPLAY_NUMBER = false, // Displays the frame number in the top left corner of the image
+RANDOM_IMAGES = false, // Shuffle images for display
+RANDOM_SIZE = false, // Use a random number between 1 and NUMBERS_PER_ROW of divisions when displaying the image grid
+NUMBER_PER_ROW = 10; // Number of images per row (and column, as this is square)
 
 function preload() {
   for (let i=1; i<maxFrames; i++){
