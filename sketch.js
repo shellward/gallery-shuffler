@@ -28,7 +28,7 @@ function setup() {
 
 
 function draw() {
-  let newNumber = RANDOM_SIZE? floor(random(1, 6)) : NUMBER_PER_ROW;
+  let newNumber = RANDOM_SIZE? floor(random(1, NUMBER_PER_ROW)) : NUMBER_PER_ROW;
   const frame = frameCount % maxFrames;
   const DISPLAY_FRAMES=(newNumber*newNumber); //must be perfect sq
 
